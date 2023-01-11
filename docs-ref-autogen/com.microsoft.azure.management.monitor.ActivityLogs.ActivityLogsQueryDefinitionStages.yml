@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.monitor.ActivityLogs.ActivityLogsQuery
 name: "ActivityLogs.ActivityLogsQueryDefinitionStages"
 nameWithType: "ActivityLogs.ActivityLogsQueryDefinitionStages"
 summary: "Grouping of Activity log query stages."
-syntax: "public static interface ActivityLogs.ActivityLogsQueryDefinitionStages"
+syntax: "public static interface **ActivityLogs.ActivityLogsQueryDefinitionStages**"
 type: "interface"
+desc: "Grouping of Activity log query stages."
 metadata: {}
 package: "com.microsoft.azure.management.monitor"
-artifact: com.microsoft.azure:azure-mgmt-monitor:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-monitor:1.41.4

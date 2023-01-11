@@ -3,9 +3,10 @@ uid: "com.microsoft.azure.cognitiveservices.vision.computervision.ComputerVision
 fullName: "com.microsoft.azure.cognitiveservices.vision.computervision.ComputerVision.ComputerVisionGetAreaOfInterestInStreamDefinitionStages"
 name: "ComputerVision.ComputerVisionGetAreaOfInterestInStreamDefinitionStages"
 nameWithType: "ComputerVision.ComputerVisionGetAreaOfInterestInStreamDefinitionStages"
-summary: "Grouping of getAreaOfInterestInStream definition stages."
-syntax: "public static interface ComputerVision.ComputerVisionGetAreaOfInterestInStreamDefinitionStages"
+summary: "Grouping of get<wbr>Area<wbr>OfInterest<wbr>InStream definition stages."
+syntax: "public static interface **ComputerVision.ComputerVisionGetAreaOfInterestInStreamDefinitionStages**"
 type: "interface"
+desc: "Grouping of getAreaOfInterestInStream definition stages."
 metadata: {}
 package: "com.microsoft.azure.cognitiveservices.vision.computervision"
-artifact: com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision:1.0.6-beta
+artifact: com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision:1.0.9-beta

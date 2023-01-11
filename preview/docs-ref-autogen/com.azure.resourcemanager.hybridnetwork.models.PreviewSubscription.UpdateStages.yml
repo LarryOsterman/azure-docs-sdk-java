@@ -3,9 +3,10 @@ uid: "com.azure.resourcemanager.hybridnetwork.models.PreviewSubscription.UpdateS
 fullName: "com.azure.resourcemanager.hybridnetwork.models.PreviewSubscription.UpdateStages"
 name: "PreviewSubscription.UpdateStages"
 nameWithType: "PreviewSubscription.UpdateStages"
-summary: "The PreviewSubscription update stages."
-syntax: "public static interface PreviewSubscription.UpdateStages"
+summary: "The Preview<wbr>Subscription update stages."
+syntax: "public static interface **PreviewSubscription.UpdateStages**"
 type: "interface"
+desc: "The PreviewSubscription update stages."
 metadata: {}
 package: "com.azure.resourcemanager.hybridnetwork.models"
-artifact: com.azure.resourcemanager:azure-resourcemanager-hybridnetwork:1.0.0-beta.1
+artifact: com.azure.resourcemanager:azure-resourcemanager-hybridnetwork:1.0.0-beta.2

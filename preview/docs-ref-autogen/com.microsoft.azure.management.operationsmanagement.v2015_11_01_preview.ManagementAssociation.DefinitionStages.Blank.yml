@@ -3,9 +3,10 @@ uid: "com.microsoft.azure.management.operationsmanagement.v2015_11_01_preview.Ma
 fullName: "com.microsoft.azure.management.operationsmanagement.v2015_11_01_preview.ManagementAssociation.DefinitionStages.Blank"
 name: "ManagementAssociation.DefinitionStages.Blank"
 nameWithType: "ManagementAssociation.DefinitionStages.Blank"
-summary: "The first stage of a ManagementAssociation definition."
-syntax: "public static interface ManagementAssociation.DefinitionStages.Blank extends ManagementAssociation.DefinitionStages.WithProvider"
+summary: "The first stage of a Management<wbr>Association definition."
+syntax: "public static interface **ManagementAssociation.DefinitionStages.Blank**</br> extends <xref href=\"com.microsoft.azure.management.operationsmanagement.v2015_11_01_preview.ManagementAssociation.DefinitionStages.WithProvider?alt=com.microsoft.azure.management.operationsmanagement.v2015_11_01_preview.ManagementAssociation.DefinitionStages.WithProvider&text=WithProvider\" data-throw-if-not-resolved=\"False\" />"
 type: "interface"
+desc: "The first stage of a ManagementAssociation definition."
 implements:
 - "<xref href=\"com.microsoft.azure.management.operationsmanagement.v2015_11_01_preview.ManagementAssociation.DefinitionStages.WithProvider?alt=com.microsoft.azure.management.operationsmanagement.v2015_11_01_preview.ManagementAssociation.DefinitionStages.WithProvider&text=WithProvider\" data-throw-if-not-resolved=\"False\" />"
 metadata: {}

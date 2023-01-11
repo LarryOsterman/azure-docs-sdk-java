@@ -3,9 +3,10 @@ uid: "com.azure.resourcemanager.recoveryservicesbackup.models.ProtectedItemResou
 fullName: "com.azure.resourcemanager.recoveryservicesbackup.models.ProtectedItemResource.DefinitionStages"
 name: "ProtectedItemResource.DefinitionStages"
 nameWithType: "ProtectedItemResource.DefinitionStages"
-summary: "The ProtectedItemResource definition stages."
-syntax: "public static interface ProtectedItemResource.DefinitionStages"
+summary: "The Protected<wbr>Item<wbr>Resource definition stages."
+syntax: "public static interface **ProtectedItemResource.DefinitionStages**"
 type: "interface"
+desc: "The ProtectedItemResource definition stages."
 metadata: {}
 package: "com.azure.resourcemanager.recoveryservicesbackup.models"
-artifact: com.azure.resourcemanager:azure-resourcemanager-recoveryservicesbackup:1.0.0-beta.1
+artifact: com.azure.resourcemanager:azure-resourcemanager-recoveryservicesbackup:1.0.0-beta.6

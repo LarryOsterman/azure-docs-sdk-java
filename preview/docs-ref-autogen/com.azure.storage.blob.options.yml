@@ -11,6 +11,7 @@ classes:
 - "com.azure.storage.blob.options.BlobBeginCopyOptions"
 - "com.azure.storage.blob.options.BlobBreakLeaseOptions"
 - "com.azure.storage.blob.options.BlobChangeLeaseOptions"
+- "com.azure.storage.blob.options.BlobContainerCreateOptions"
 - "com.azure.storage.blob.options.BlobCopyFromUrlOptions"
 - "com.azure.storage.blob.options.BlobDownloadToFileOptions"
 - "com.azure.storage.blob.options.BlobGetTagsOptions"
@@ -28,11 +29,15 @@ classes:
 - "com.azure.storage.blob.options.BlockBlobOutputStreamOptions"
 - "com.azure.storage.blob.options.BlockBlobSimpleUploadOptions"
 - "com.azure.storage.blob.options.BlockBlobStageBlockFromUrlOptions"
+- "com.azure.storage.blob.options.BlockBlobStageBlockOptions"
 - "com.azure.storage.blob.options.FindBlobsOptions"
+- "com.azure.storage.blob.options.ListPageRangesDiffOptions"
+- "com.azure.storage.blob.options.ListPageRangesOptions"
 - "com.azure.storage.blob.options.PageBlobCopyIncrementalOptions"
 - "com.azure.storage.blob.options.PageBlobCreateOptions"
 - "com.azure.storage.blob.options.PageBlobUploadPagesFromUrlOptions"
 - "com.azure.storage.blob.options.UndeleteBlobContainerOptions"
+desc: "Package containing options model classes used by Azure Storage Blobs."
 metadata: {}
 package: "com.azure.storage.blob.options"
-artifact: com.azure:azure-storage-blob:12.15.0-beta.1
+artifact: com.azure:azure-storage-blob:12.20.0-beta.1

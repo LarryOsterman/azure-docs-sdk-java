@@ -4,12 +4,14 @@ fullName: "com.microsoft.azure.management.batch.Pool.UpdateDefinitionStages.Blan
 name: "Pool.UpdateDefinitionStages.Blank<ParentT>"
 nameWithType: "Pool.UpdateDefinitionStages.Blank<ParentT>"
 summary: "The first stage of a Batch pool definition."
-syntax: "public static interface Pool.UpdateDefinitionStages.Blank<ParentT> extends Pool.UpdateDefinitionStages.WithAttach<ParentT>"
+syntax: "public static interface **Pool.UpdateDefinitionStages.Blank<ParentT>**</br> extends <xref href=\"com.microsoft.azure.management.batch.Pool.UpdateDefinitionStages.WithAttach?alt=com.microsoft.azure.management.batch.Pool.UpdateDefinitionStages.WithAttach&text=WithAttach\" data-throw-if-not-resolved=\"False\" />&lt;<xref href=\"ParentT?alt=ParentT&text=ParentT\" data-throw-if-not-resolved=\"False\" />&gt;"
 type: "interface"
 typeParameters:
-- name: "ParentT"
+- description: "the stage of the parent Batch account definition to return to after attaching this definition"
+  name: "ParentT"
+desc: "The first stage of a Batch pool definition."
 implements:
 - "<xref href=\"com.microsoft.azure.management.batch.Pool.UpdateDefinitionStages.WithAttach?alt=com.microsoft.azure.management.batch.Pool.UpdateDefinitionStages.WithAttach&text=WithAttach\" data-throw-if-not-resolved=\"False\" />&lt;<xref href=\"ParentT?alt=ParentT&text=ParentT\" data-throw-if-not-resolved=\"False\" />&gt;"
 metadata: {}
 package: "com.microsoft.azure.management.batch"
-artifact: com.microsoft.azure:azure-mgmt-batch:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-batch:1.41.4

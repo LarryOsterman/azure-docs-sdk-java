@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.containerservice.KubernetesClusterAgen
 name: "KubernetesClusterAgentPool.UpdateStages"
 nameWithType: "KubernetesClusterAgentPool.UpdateStages"
 summary: "Grouping of agent pool update stages."
-syntax: "public static interface KubernetesClusterAgentPool.UpdateStages"
+syntax: "public static interface **KubernetesClusterAgentPool.UpdateStages**"
 type: "interface"
+desc: "Grouping of agent pool update stages."
 metadata: {}
 package: "com.microsoft.azure.management.containerservice"
-artifact: com.microsoft.azure:azure-mgmt-containerservice:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-containerservice:1.41.4

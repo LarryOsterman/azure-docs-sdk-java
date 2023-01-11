@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.cognitiveservices.search.newssearch.BingNews.Bing
 name: "BingNews.BingNewsTrendingDefinitionStages"
 nameWithType: "BingNews.BingNewsTrendingDefinitionStages"
 summary: "Grouping of trending definition stages."
-syntax: "public static interface BingNews.BingNewsTrendingDefinitionStages"
+syntax: "public static interface **BingNews.BingNewsTrendingDefinitionStages**"
 type: "interface"
+desc: "Grouping of trending definition stages."
 metadata: {}
 package: "com.microsoft.azure.cognitiveservices.search.newssearch"
 artifact: com.microsoft.azure.cognitiveservices:azure-cognitiveservices-newssearch:1.0.2

@@ -3,9 +3,10 @@ uid: "com.azure.resourcemanager.timeseriesinsights.models.ReferenceDataSetResour
 fullName: "com.azure.resourcemanager.timeseriesinsights.models.ReferenceDataSetResource.DefinitionStages"
 name: "ReferenceDataSetResource.DefinitionStages"
 nameWithType: "ReferenceDataSetResource.DefinitionStages"
-summary: "The ReferenceDataSetResource definition stages."
-syntax: "public static interface ReferenceDataSetResource.DefinitionStages"
+summary: "The Reference<wbr>Data<wbr>Set<wbr>Resource definition stages."
+syntax: "public static interface **ReferenceDataSetResource.DefinitionStages**"
 type: "interface"
+desc: "The ReferenceDataSetResource definition stages."
 metadata: {}
 package: "com.azure.resourcemanager.timeseriesinsights.models"
 artifact: com.azure.resourcemanager:azure-resourcemanager-timeseriesinsights:1.0.0-beta.1

@@ -1,17 +1,14 @@
 ---
 title: Azure Template client library for Java
 keywords: Azure, java, SDK, API, azure-sdk-template, template
-author: maggiepint
-ms.author: magpint
-ms.date: 11/21/2021
+author: hallipr
+ms.author: pahallis
+ms.date: 12/10/2022
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: java
 ms.service: template
 ---
-
-# Azure Template client library for Java - Version 1.2.1-beta.1206675 
+# Azure Template client library for Java - version 1.2.1-beta.2046419 
 
 
 Use the guidelines in each section of this template to ensure consistency and readability of your README. 
@@ -21,14 +18,14 @@ It's also used as the package distribution page (NuGet, PyPi, npm, etc.) and as 
 **Title**: The H1 of your README should be in the format: `# [Product Name] client library for [Language]`
 
 * All headings, including the H1, should use **sentence-style capitalization**. Refer to the [Microsoft Style Guide][style-guide-msft].
-* Example: `# Azure Batch client library for Java - Version 1.2.1-beta.1206675 
+* Example: `# Azure Batch client library for Java - version 1.2.1-beta.2046419 
 `
 
 **Introduction**: The introduction appears directly under the title (H1) of your README.
 
 * **DO NOT** use an "Introduction" or "Overview" heading (H2) for this section.
 * First sentence: **Describe the service** briefly. You can usually use the first line of the service's docs landing page 
-  for this (Example: [Cosmos DB docs landing page](https://docs.microsoft.com/azure/cosmos-db/)).
+  for this (Example: [Cosmos DB docs landing page](/azure/cosmos-db/)).
 * Next, add a **bulleted list** of the **most common tasks** supported by the package or library, prefaced with 
   "Use the client library for [Product Name] to:". Then, provide code snippets for these tasks in the [Examples](#examples) 
   section later in the document. Keep the task list short but include those tasks most developers need to perform with your package.
@@ -51,7 +48,7 @@ Include a **Prerequisites** line after the install command that details any requ
 a developer can [authenticate](#authenticate-the-client) and test all the snippets in the [Examples](#examples) section. 
 For example, for Cosmos DB:
 
-**Prerequisites**: You must have an [Azure subscription](https://azure.microsoft.com/free/), [Cosmos DB account](https://docs.microsoft.com/azure/cosmos-db/account-overview) (SQL API), and [Java Development Kit (JDK) with version 8 or above][jdk] to use this package.
+**Prerequisites**: You must have an [Azure subscription](https://azure.microsoft.com/free/), [Cosmos DB account](/azure/cosmos-db/account-overview) (SQL API), and [Java Development Kit (JDK) with version 8 or above][jdk] to use this package.
 
 > TODO: Once the library has GA'ed include the instructions on how to include the BOM file directly. And the benefit of using the BOM file over adding a direct dependency to the project.
 
@@ -75,8 +72,8 @@ Include code snippets and short descriptions for each task you listed in the [In
 Briefly explain each operation, but include enough clarity to explain complex or otherwise tricky operations.
 
 If possible, use the same example snippets that your in-code documentation uses. For example, use the snippets in your 
-`ReadmeSamples.java` that `embedme` ingests via its [alternate syntax](https://github.com/zakhenry/embedme#alternate-embedding-syntax) 
-directive. The `ReadmeSamples.java` file containing the snippets should reside alongside your package's code, and should be 
+`ReadmeSamples.java` that `codesnippet-maven-plugin` ingests via its [README syntax](https://github.com/Azure/azure-sdk-tools/tree/main/packages/java-packages/codesnippet-maven-plugin#injecting-codesnippets-into-readmes). 
+The `ReadmeSamples.java` file containing the snippets should reside alongside your package's code, and should be 
 validated in an automated fashion.
 
 Each example in the *Examples* section starts with an H3 that describes the example. At the top of this section, just 
@@ -144,8 +141,8 @@ provides more information on configuring or changing the HTTP client.
   they might be looking for.
   
 * After adding the new SDK, you need to include the package in the following locations
-1. version_client.txt - include the package with the version.
-2. parent pom - <enlistmentroot>\pom.xml - Multiple places in the file.
+1. `version_client.txt` - include the package with the version.
+2. parent pom - `<enlistmentroot>\pom.xml` - Multiple places in the file.
 
 ## Contributing
 
@@ -161,8 +158,8 @@ This project has adopted the [Microsoft Open Source Code of Conduct][coc]. For m
 [Code of Conduct FAQ][coc_faq] or contact [opencode@microsoft.com][coc_contact] with any additional questions or comments.
 
 <!-- LINKS -->
-[style-guide-msft]: https://docs.microsoft.com/style-guide/capitalization
-[jdk]: https://docs.microsoft.com/java/azure/jdk/?view=azure-java-stable
+[style-guide-msft]: /style-guide/capitalization
+[jdk]: /java/azure/jdk/?view=azure-java-stable
 [logging]: https://github.com/Azure/azure-sdk-for-java/wiki/Logging-with-Azure-SDK
 [cla]: https://cla.microsoft.com
 [coc]: https://opensource.microsoft.com/codeofconduct/

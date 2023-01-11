@@ -3,11 +3,12 @@ uid: "com.azure.resourcemanager.security.models.RuleResults.DefinitionStages.Bla
 fullName: "com.azure.resourcemanager.security.models.RuleResults.DefinitionStages.Blank"
 name: "RuleResults.DefinitionStages.Blank"
 nameWithType: "RuleResults.DefinitionStages.Blank"
-summary: "The first stage of the RuleResults definition."
-syntax: "public static interface RuleResults.DefinitionStages.Blank extends RuleResults.DefinitionStages.WithScope"
+summary: "The first stage of the Rule<wbr>Results definition."
+syntax: "public static interface **RuleResults.DefinitionStages.Blank**</br> extends <xref href=\"com.azure.resourcemanager.security.models.RuleResults.DefinitionStages.WithScope?alt=com.azure.resourcemanager.security.models.RuleResults.DefinitionStages.WithScope&text=WithScope\" data-throw-if-not-resolved=\"False\" />"
 type: "interface"
+desc: "The first stage of the RuleResults definition."
 implements:
 - "<xref href=\"com.azure.resourcemanager.security.models.RuleResults.DefinitionStages.WithScope?alt=com.azure.resourcemanager.security.models.RuleResults.DefinitionStages.WithScope&text=WithScope\" data-throw-if-not-resolved=\"False\" />"
 metadata: {}
 package: "com.azure.resourcemanager.security.models"
-artifact: com.azure.resourcemanager:azure-resourcemanager-security:1.0.0-beta.1
+artifact: com.azure.resourcemanager:azure-resourcemanager-security:1.0.0-beta.3

@@ -1,18 +1,14 @@
 ---
-title: Azure Resource Manager libraries for Java
-description: Reference documentation for the Java Resource Manager libraries 
-keywords: Azure, Java, SDK, API, resource groups, arm, resource manager
-author: ramya-rao-a
-ms.author: ramyar
-manager: douge
-ms.date: 06/21/2017
+title: Azure Resources SDK for Java
+description: Reference for Azure Resources SDK for Java
+author: joshfree
+ms.author: jfree
+ms.data: 01/10/2023
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: java
-ms.service: data-lake-store
+ms.service: resources
+ms.date: 07/08/2022
 ---
-
 # Azure Resource Manager libraries for Java
 
 ## Overview

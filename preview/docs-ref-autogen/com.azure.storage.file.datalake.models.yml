@@ -2,7 +2,7 @@
 uid: "com.azure.storage.file.datalake.models"
 fullName: "com.azure.storage.file.datalake.models"
 name: "com.azure.storage.file.datalake.models"
-summary: "Package containing classes for AzureDataLakeStorageRestAPI. Azure Data Lake Storage provides storage for Hadoop and\n other big data workloads."
+summary: "Package containing classes for AzureDataLakeStorageRestAPI."
 classes:
 - "com.azure.storage.file.datalake.models.AccessControlChangeCounters"
 - "com.azure.storage.file.datalake.models.AccessControlChangeFailure"
@@ -11,6 +11,7 @@ classes:
 - "com.azure.storage.file.datalake.models.AccessControlType"
 - "com.azure.storage.file.datalake.models.AccessTier"
 - "com.azure.storage.file.datalake.models.ArchiveStatus"
+- "com.azure.storage.file.datalake.models.CustomerProvidedKey"
 - "com.azure.storage.file.datalake.models.DataLakeAccessPolicy"
 - "com.azure.storage.file.datalake.models.DataLakeAclChangeFailedException"
 - "com.azure.storage.file.datalake.models.DataLakeAnalyticsLogging"
@@ -59,6 +60,7 @@ classes:
 enums:
 - "com.azure.storage.file.datalake.models.ConsistentReadControl"
 - "com.azure.storage.file.datalake.models.CopyStatusType"
+- "com.azure.storage.file.datalake.models.EncryptionAlgorithmType"
 - "com.azure.storage.file.datalake.models.FileExpirationOffset"
 - "com.azure.storage.file.datalake.models.FileQueryArrowFieldType"
 - "com.azure.storage.file.datalake.models.LeaseDurationType"
@@ -68,6 +70,7 @@ enums:
 interfaces:
 - "com.azure.storage.file.datalake.models.DataLakeFileOpenInputStreamResult"
 - "com.azure.storage.file.datalake.models.FileQuerySerialization"
+desc: "Package containing classes for AzureDataLakeStorageRestAPI. Azure Data Lake Storage provides storage for Hadoop and\n other big data workloads."
 metadata: {}
 package: "com.azure.storage.file.datalake.models"
-artifact: com.azure:azure-storage-file-datalake:12.8.0-beta.1
+artifact: com.azure:azure-storage-file-datalake:12.13.0-beta.1

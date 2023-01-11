@@ -2,7 +2,7 @@
 uid: "com.azure.resourcemanager.containerinstance.models"
 fullName: "com.azure.resourcemanager.containerinstance.models"
 name: "com.azure.resourcemanager.containerinstance.models"
-summary: "Package containing the data models for ContainerInstanceManagementClient. null."
+summary: "Package containing the data models for ContainerInstanceManagementClient."
 classes:
 - "com.azure.resourcemanager.containerinstance.models.AzureFileVolume"
 - "com.azure.resourcemanager.containerinstance.models.CachedImages"
@@ -32,6 +32,7 @@ classes:
 - "com.azure.resourcemanager.containerinstance.models.ContainerPropertiesInstanceView"
 - "com.azure.resourcemanager.containerinstance.models.ContainerState"
 - "com.azure.resourcemanager.containerinstance.models.DnsConfiguration"
+- "com.azure.resourcemanager.containerinstance.models.DnsNameLabelReusePolicy"
 - "com.azure.resourcemanager.containerinstance.models.EncryptionProperties"
 - "com.azure.resourcemanager.containerinstance.models.EnvironmentVariable"
 - "com.azure.resourcemanager.containerinstance.models.Event"
@@ -75,10 +76,12 @@ interfaces:
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithEnvironmentVariables"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithGpuResource"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithImage"
+- "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithLivenessProbe"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithMemorySize"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithOrWithoutPorts"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithPorts"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithPortsOrContainerInstanceAttach"
+- "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithReadinessProbe"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithStartingCommandLine"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithVolumeMountSetting"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.ContainerInstanceDefinitionStages.WithoutPorts"
@@ -114,6 +117,7 @@ interfaces:
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.DefinitionStages.WithVolume"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroup.Update"
 - "com.azure.resourcemanager.containerinstance.models.ContainerGroups"
+desc: "Package containing the data models for ContainerInstanceManagementClient. null."
 metadata: {}
 package: "com.azure.resourcemanager.containerinstance.models"
-artifact: com.azure.resourcemanager:azure-resourcemanager-containerinstance:2.9.0
+artifact: com.azure.resourcemanager:azure-resourcemanager-containerinstance:2.22.0

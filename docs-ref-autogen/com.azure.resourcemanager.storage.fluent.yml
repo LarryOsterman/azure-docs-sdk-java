@@ -2,7 +2,7 @@
 uid: "com.azure.resourcemanager.storage.fluent"
 fullName: "com.azure.resourcemanager.storage.fluent"
 name: "com.azure.resourcemanager.storage.fluent"
-summary: "Package containing the service clients for StorageManagementClient. The Azure Storage Management API."
+summary: "Package containing the service clients for StorageManagementClient."
 interfaces:
 - "com.azure.resourcemanager.storage.fluent.BlobContainersClient"
 - "com.azure.resourcemanager.storage.fluent.BlobInventoryPoliciesClient"
@@ -11,6 +11,7 @@ interfaces:
 - "com.azure.resourcemanager.storage.fluent.EncryptionScopesClient"
 - "com.azure.resourcemanager.storage.fluent.FileServicesClient"
 - "com.azure.resourcemanager.storage.fluent.FileSharesClient"
+- "com.azure.resourcemanager.storage.fluent.LocalUsersOperationsClient"
 - "com.azure.resourcemanager.storage.fluent.ManagementPoliciesClient"
 - "com.azure.resourcemanager.storage.fluent.ObjectReplicationPoliciesOperationsClient"
 - "com.azure.resourcemanager.storage.fluent.OperationsClient"
@@ -24,6 +25,7 @@ interfaces:
 - "com.azure.resourcemanager.storage.fluent.TableServicesClient"
 - "com.azure.resourcemanager.storage.fluent.TablesClient"
 - "com.azure.resourcemanager.storage.fluent.UsagesClient"
+desc: "Package containing the service clients for StorageManagementClient. The Azure Storage Management API."
 metadata: {}
 package: "com.azure.resourcemanager.storage.fluent"
-artifact: com.azure.resourcemanager:azure-resourcemanager-storage:2.9.0
+artifact: com.azure.resourcemanager:azure-resourcemanager-storage:2.22.0

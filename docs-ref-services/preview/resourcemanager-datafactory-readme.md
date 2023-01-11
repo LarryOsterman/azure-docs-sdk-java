@@ -1,17 +1,14 @@
 ---
 title: Azure Resource Manager DataFactory client library for Java
 keywords: Azure, java, SDK, API, azure-resourcemanager-datafactory, datafactory
-author: maggiepint
-ms.author: magpint
-ms.date: 11/10/2021
+author: joshfree
+ms.author: jfree
+ms.date: 11/24/2022
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: java
 ms.service: datafactory
 ---
-
-# Azure Resource Manager DataFactory client library for Java - Version 1.0.0-beta.7 
+# Azure Resource Manager DataFactory client library for Java - version 1.0.0-beta.19 
 
 
 Azure Resource Manager DataFactory client library for Java.
@@ -46,7 +43,7 @@ Various documentation is available to help you get started
 <dependency>
     <groupId>com.azure.resourcemanager</groupId>
     <artifactId>azure-resourcemanager-datafactory</artifactId>
-    <version>1.0.0-beta.7</version>
+    <version>1.0.0-beta.19</version>
 </dependency>
 ```
 [//]: # ({x-version-update-end})
@@ -55,19 +52,19 @@ Various documentation is available to help you get started
 
 Azure Management Libraries require a `TokenCredential` implementation for authentication and an `HttpClient` implementation for HTTP client.
 
-[Azure Identity][azure_identity] package and [Azure Core Netty HTTP][azure_core_http_netty] package provide the default implementation.
+[Azure Identity][azure_identity] and [Azure Core Netty HTTP][azure_core_http_netty] packages provide the default implementation.
 
 ### Authentication
 
-By default, Azure Active Directory token authentication depends on correct configure of following environment variables.
+By default, Azure Active Directory token authentication depends on correct configuration of the following environment variables.
 
 - `AZURE_CLIENT_ID` for Azure client ID.
 - `AZURE_TENANT_ID` for Azure tenant ID.
 - `AZURE_CLIENT_SECRET` or `AZURE_CLIENT_CERTIFICATE_PATH` for client secret or client certificate.
 
-In addition, Azure subscription ID can be configured via environment variable `AZURE_SUBSCRIPTION_ID`.
+In addition, Azure subscription ID can be configured via `AZURE_SUBSCRIPTION_ID` environment variable.
 
-With above configuration, `azure` client can be authenticated by following code:
+With above configuration, `azure` client can be authenticated using the following code:
 
 ```java
 AzureProfile profile = new AzureProfile(AzureEnvironment.AZURE);
@@ -92,7 +89,7 @@ See [API design][design] for general introduction on design and key concepts on 
 // storage account
 StorageAccount storageAccount = storageManager.storageAccounts().define(STORAGE_ACCOUNT)
     .withRegion(REGION)
-    .withExistingResourceGroup(RESOURCE_GROUP)
+    .withExistingResourceGroup(resourceGroup)
     .create();
 final String storageAccountKey = storageAccount.getKeys().iterator().next().value();
 final String connectionString = getStorageConnectionString(STORAGE_ACCOUNT, storageAccountKey, storageManager.environment());
@@ -100,7 +97,7 @@ final String connectionString = getStorageConnectionString(STORAGE_ACCOUNT, stor
 // container
 final String containerName = "adf";
 storageManager.blobContainers().defineContainer(containerName)
-    .withExistingBlobService(RESOURCE_GROUP, STORAGE_ACCOUNT)
+    .withExistingStorageAccount(resourceGroup, STORAGE_ACCOUNT)
     .withPublicAccess(PublicAccess.NONE)
     .create();
 
@@ -113,9 +110,9 @@ BlobClient blobClient = new BlobClientBuilder()
 blobClient.upload(BinaryData.fromString("data"));
 
 // data factory
-manager.factories().define(DATA_FACTORY)
+Factory dataFactory = manager.factories().define(DATA_FACTORY)
     .withRegion(REGION)
-    .withExistingResourceGroup(RESOURCE_GROUP)
+    .withExistingResourceGroup(resourceGroup)
     .create();
 
 // linked service
@@ -125,7 +122,7 @@ connectionStringProperty.put("value", connectionString);
 
 final String linkedServiceName = "LinkedService";
 manager.linkedServices().define(linkedServiceName)
-    .withExistingFactory(RESOURCE_GROUP, DATA_FACTORY)
+    .withExistingFactory(resourceGroup, DATA_FACTORY)
     .withProperties(new AzureStorageLinkedService()
         .withConnectionString(connectionStringProperty))
     .create();
@@ -133,7 +130,7 @@ manager.linkedServices().define(linkedServiceName)
 // input dataset
 final String inputDatasetName = "InputDataset";
 manager.datasets().define(inputDatasetName)
-    .withExistingFactory(RESOURCE_GROUP, DATA_FACTORY)
+    .withExistingFactory(resourceGroup, DATA_FACTORY)
     .withProperties(new AzureBlobDataset()
         .withLinkedServiceName(new LinkedServiceReference().withReferenceName(linkedServiceName))
         .withFolderPath(containerName)
@@ -144,7 +141,7 @@ manager.datasets().define(inputDatasetName)
 // output dataset
 final String outputDatasetName = "OutputDataset";
 manager.datasets().define(outputDatasetName)
-    .withExistingFactory(RESOURCE_GROUP, DATA_FACTORY)
+    .withExistingFactory(resourceGroup, DATA_FACTORY)
     .withProperties(new AzureBlobDataset()
         .withLinkedServiceName(new LinkedServiceReference().withReferenceName(linkedServiceName))
         .withFolderPath(containerName)
@@ -154,7 +151,7 @@ manager.datasets().define(outputDatasetName)
 
 // pipeline
 PipelineResource pipeline = manager.pipelines().define("CopyBlobPipeline")
-    .withExistingFactory(RESOURCE_GROUP, DATA_FACTORY)
+    .withExistingFactory(resourceGroup, DATA_FACTORY)
     .withActivities(Collections.singletonList(new CopyActivity()
         .withName("CopyBlob")
         .withSource(new BlobSource())
@@ -167,15 +164,15 @@ PipelineResource pipeline = manager.pipelines().define("CopyBlobPipeline")
 CreateRunResponse createRun = pipeline.createRun();
 
 // wait for completion
-PipelineRun pipelineRun = manager.pipelineRuns().get(RESOURCE_GROUP, DATA_FACTORY, createRun.runId());
+PipelineRun pipelineRun = manager.pipelineRuns().get(resourceGroup, DATA_FACTORY, createRun.runId());
 String runStatus = pipelineRun.status();
 while ("InProgress".equals(runStatus)) {
     sleepIfRunningAgainstService(10 * 1000);    // wait 10 seconds
-    pipelineRun = manager.pipelineRuns().get(RESOURCE_GROUP, DATA_FACTORY, createRun.runId());
+    pipelineRun = manager.pipelineRuns().get(resourceGroup, DATA_FACTORY, createRun.runId());
     runStatus = pipelineRun.status();
 }
 ```
-[Code snippets and samples](https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.7/sdk/datafactory/azure-resourcemanager-datafactory/SAMPLE.md)
+[Code snippets and samples](https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.19/sdk/datafactory/azure-resourcemanager-datafactory/SAMPLE.md)
 
 
 ## Troubleshooting
@@ -184,21 +181,24 @@ while ("InProgress".equals(runStatus)) {
 
 ## Contributing
 
-For details on contributing to this repository, see the [contributing guide](https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.7/CONTRIBUTING.md).
+For details on contributing to this repository, see the [contributing guide][cg].
 
-1. Fork it
-1. Create your feature branch (`git checkout -b my-new-feature`)
-1. Commit your changes (`git commit -am 'Add some feature'`)
-1. Push to the branch (`git push origin my-new-feature`)
-1. Create new Pull Request
+This project welcomes contributions and suggestions. Most contributions require you to agree to a Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us the rights to use your contribution. For details, visit <https://cla.microsoft.com>.
+
+When you submit a pull request, a CLA-bot will automatically determine whether you need to provide a CLA and decorate the PR appropriately (e.g., label, comment). Simply follow the instructions provided by the bot. You will only need to do this once across all repositories using our CLA.
+
+This project has adopted the [Microsoft Open Source Code of Conduct][coc]. For more information see the [Code of Conduct FAQ][coc_faq] or contact <opencode@microsoft.com> with any additional questions or comments.
 
 <!-- LINKS -->
 [survey]: https://microsoft.qualtrics.com/jfe/form/SV_ehN0lIk2FKEBkwd?Q_CHL=DOCS
 [docs]: https://azure.github.io/azure-sdk-for-java/
-[jdk]: https://docs.microsoft.com/java/azure/jdk/
+[jdk]: /java/azure/jdk/
 [azure_subscription]: https://azure.microsoft.com/free/
-[azure_identity]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.7/sdk/identity/azure-identity
-[azure_core_http_netty]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.7/sdk/core/azure-core-http-netty
-[authenticate]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.7/sdk/resourcemanager/docs/AUTH.md
-[design]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.7/sdk/resourcemanager/docs/DESIGN.md
+[azure_identity]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.19/sdk/identity/azure-identity
+[azure_core_http_netty]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.19/sdk/core/azure-core-http-netty
+[authenticate]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.19/sdk/resourcemanager/docs/AUTH.md
+[design]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.19/sdk/resourcemanager/docs/DESIGN.md
+[cg]: https://github.com/Azure/azure-sdk-for-java/blob/azure-resourcemanager-datafactory_1.0.0-beta.19/CONTRIBUTING.md
+[coc]: https://opensource.microsoft.com/codeofconduct/
+[coc_faq]: https://opensource.microsoft.com/codeofconduct/faq/
 

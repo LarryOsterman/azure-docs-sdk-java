@@ -3,9 +3,10 @@ uid: "com.microsoft.azure.cognitiveservices.vision.computervision.ComputerVision
 fullName: "com.microsoft.azure.cognitiveservices.vision.computervision.ComputerVision.ComputerVisionDescribeImageDefinitionStages"
 name: "ComputerVision.ComputerVisionDescribeImageDefinitionStages"
 nameWithType: "ComputerVision.ComputerVisionDescribeImageDefinitionStages"
-summary: "Grouping of describeImage definition stages."
-syntax: "public static interface ComputerVision.ComputerVisionDescribeImageDefinitionStages"
+summary: "Grouping of describe<wbr>Image definition stages."
+syntax: "public static interface **ComputerVision.ComputerVisionDescribeImageDefinitionStages**"
 type: "interface"
+desc: "Grouping of describeImage definition stages."
 metadata: {}
 package: "com.microsoft.azure.cognitiveservices.vision.computervision"
-artifact: com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision:1.0.6-beta
+artifact: com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision:1.0.9-beta

@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.network.model.HasFrontend.UpdateDefini
 name: "HasFrontend.UpdateDefinitionStages"
 nameWithType: "HasFrontend.UpdateDefinitionStages"
 summary: "Grouping of definition stages applicable as part of a resource update involving modifying the frontend."
-syntax: "public static interface HasFrontend.UpdateDefinitionStages"
+syntax: "public static interface **HasFrontend.UpdateDefinitionStages**"
 type: "interface"
+desc: "Grouping of definition stages applicable as part of a resource update involving modifying the frontend."
 metadata: {}
 package: "com.microsoft.azure.management.network.model"
-artifact: com.microsoft.azure:azure-mgmt-network:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-network:1.41.4

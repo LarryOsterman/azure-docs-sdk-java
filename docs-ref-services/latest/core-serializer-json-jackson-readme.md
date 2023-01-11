@@ -1,17 +1,14 @@
 ---
 title: Azure Core Jackson JSON Serializer plugin library for Java
 keywords: Azure, java, SDK, API, azure-core-serializer-json-jackson, core
-author: ramya-rao-a
-ms.author: ramyar
-ms.date: 11/05/2021
+author: alzimmermsft
+ms.author: alzimmer
+ms.date: 01/06/2023
 ms.topic: reference
-ms.prod: azure
-ms.technology: azure
 ms.devlang: java
 ms.service: core
 ---
-
-# Azure Core Jackson JSON Serializer plugin library for Java - Version 1.2.9 
+# Azure Core Jackson JSON Serializer plugin library for Java - version 1.2.24 
 
 
 Azure Core Jackson JSON Serializer is a plugin for the `azure-core` `JsonSerializer` API.
@@ -26,7 +23,7 @@ Azure Core Jackson JSON Serializer is a plugin for the `azure-core` `JsonSeriali
 #### Include the BOM file
 
 Please include the azure-sdk-bom to your project to take dependency on the General Availability (GA) version of the library. In the following snippet, replace the {bom_version_to_target} placeholder with the version number.
-To learn more about the BOM, see the [AZURE SDK BOM README](https://github.com/Azure/azure-sdk-for-java/blob/azure-core-serializer-json-jackson_1.2.9/sdk/boms/azure-sdk-bom/README.md).
+To learn more about the BOM, see the [AZURE SDK BOM README](https://github.com/Azure/azure-sdk-for-java/blob/azure-core-serializer-json-jackson_1.2.24/sdk/boms/azure-sdk-bom/README.md).
 
 ```xml
 <dependencyManagement>
@@ -61,7 +58,7 @@ add the direct dependency to your project as follows.
 <dependency>
     <groupId>com.azure</groupId>
     <artifactId>azure-core-serializer-json-jackson</artifactId>
-    <version>1.2.9</version>
+    <version>1.2.24</version>
 </dependency>
 ```
 [//]: # ({x-version-update-end})
@@ -87,7 +84,7 @@ locate the root issue. View the [logging][logging] wiki for guidance about enabl
 
 ## Contributing
 
-For details on contributing to this repository, see the [contributing guide](https://github.com/Azure/azure-sdk-for-java/blob/azure-core-serializer-json-jackson_1.2.9/CONTRIBUTING.md).
+For details on contributing to this repository, see the [contributing guide](https://github.com/Azure/azure-sdk-for-java/blob/azure-core-serializer-json-jackson_1.2.24/CONTRIBUTING.md).
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
@@ -97,7 +94,7 @@ For details on contributing to this repository, see the [contributing guide](htt
 
 <!-- Links -->
 [logging]: https://github.com/Azure/azure-sdk-for-java/wiki/Logging-with-Azure-SDK
-[jdk_link]: https://docs.microsoft.com/java/azure/jdk/?view=azure-java-stable
+[jdk_link]: /java/azure/jdk/?view=azure-java-stable
 
 ![Impressions](https://azure-sdk-impressions.azurewebsites.net/api/impressions/azure-sdk-for-java%2Fsdk%2Fcore%2Fazure-core-serializer-json-jackson%2FREADME.png)
 

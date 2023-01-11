@@ -7,11 +7,13 @@ classes:
 - "com.azure.core.http.ContentType"
 - "com.azure.core.http.HttpAuthorization"
 - "com.azure.core.http.HttpHeader"
+- "com.azure.core.http.HttpHeaderName"
 - "com.azure.core.http.HttpHeaders"
 - "com.azure.core.http.HttpPipeline"
 - "com.azure.core.http.HttpPipelineBuilder"
 - "com.azure.core.http.HttpPipelineCallContext"
 - "com.azure.core.http.HttpPipelineNextPolicy"
+- "com.azure.core.http.HttpPipelineNextSyncPolicy"
 - "com.azure.core.http.HttpRange"
 - "com.azure.core.http.HttpRequest"
 - "com.azure.core.http.HttpResponse"
@@ -25,6 +27,7 @@ enums:
 interfaces:
 - "com.azure.core.http.HttpClient"
 - "com.azure.core.http.HttpClientProvider"
+desc: "Package containing HTTP abstractions between the AnnotationParser, RestProxy, and HTTP client."
 metadata: {}
 package: "com.azure.core.http"
-artifact: com.azure:azure-core:1.22.0
+artifact: com.azure:azure-core:1.35.0

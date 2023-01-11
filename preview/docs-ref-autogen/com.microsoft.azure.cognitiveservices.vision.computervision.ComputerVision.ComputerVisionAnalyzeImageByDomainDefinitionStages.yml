@@ -3,9 +3,10 @@ uid: "com.microsoft.azure.cognitiveservices.vision.computervision.ComputerVision
 fullName: "com.microsoft.azure.cognitiveservices.vision.computervision.ComputerVision.ComputerVisionAnalyzeImageByDomainDefinitionStages"
 name: "ComputerVision.ComputerVisionAnalyzeImageByDomainDefinitionStages"
 nameWithType: "ComputerVision.ComputerVisionAnalyzeImageByDomainDefinitionStages"
-summary: "Grouping of analyzeImageByDomain definition stages."
-syntax: "public static interface ComputerVision.ComputerVisionAnalyzeImageByDomainDefinitionStages"
+summary: "Grouping of analyze<wbr>Image<wbr>ByDomain definition stages."
+syntax: "public static interface **ComputerVision.ComputerVisionAnalyzeImageByDomainDefinitionStages**"
 type: "interface"
+desc: "Grouping of analyzeImageByDomain definition stages."
 metadata: {}
 package: "com.microsoft.azure.cognitiveservices.vision.computervision"
-artifact: com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision:1.0.6-beta
+artifact: com.microsoft.azure.cognitiveservices:azure-cognitiveservices-computervision:1.0.9-beta

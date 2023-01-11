@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.dns.DnsRecordSet.DefinitionStages"
 name: "DnsRecordSet.DefinitionStages"
 nameWithType: "DnsRecordSet.DefinitionStages"
 summary: "Grouping of DNS zone record set definition stages as a part of parent DNS zone definition."
-syntax: "public static interface DnsRecordSet.DefinitionStages"
+syntax: "public static interface **DnsRecordSet.DefinitionStages**"
 type: "interface"
+desc: "Grouping of DNS zone record set definition stages as a part of parent DNS zone definition."
 metadata: {}
 package: "com.microsoft.azure.management.dns"
-artifact: com.microsoft.azure:azure-mgmt-dns:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-dns:1.41.4

@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.monitor.ActivityLogAlert.UpdateStages"
 name: "ActivityLogAlert.UpdateStages"
 nameWithType: "ActivityLogAlert.UpdateStages"
 summary: "Grouping of activity log alerts update stages."
-syntax: "public static interface ActivityLogAlert.UpdateStages"
+syntax: "public static interface **ActivityLogAlert.UpdateStages**"
 type: "interface"
+desc: "Grouping of activity log alerts update stages."
 metadata: {}
 package: "com.microsoft.azure.management.monitor"
-artifact: com.microsoft.azure:azure-mgmt-monitor:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-monitor:1.41.4

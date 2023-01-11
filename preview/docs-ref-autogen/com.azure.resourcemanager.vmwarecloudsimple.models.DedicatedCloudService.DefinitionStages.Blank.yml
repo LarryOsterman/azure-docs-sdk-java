@@ -3,9 +3,10 @@ uid: "com.azure.resourcemanager.vmwarecloudsimple.models.DedicatedCloudService.D
 fullName: "com.azure.resourcemanager.vmwarecloudsimple.models.DedicatedCloudService.DefinitionStages.Blank"
 name: "DedicatedCloudService.DefinitionStages.Blank"
 nameWithType: "DedicatedCloudService.DefinitionStages.Blank"
-summary: "The first stage of the DedicatedCloudService definition."
-syntax: "public static interface DedicatedCloudService.DefinitionStages.Blank extends DedicatedCloudService.DefinitionStages.WithLocation"
+summary: "The first stage of the Dedicated<wbr>Cloud<wbr>Service definition."
+syntax: "public static interface **DedicatedCloudService.DefinitionStages.Blank**</br> extends <xref href=\"com.azure.resourcemanager.vmwarecloudsimple.models.DedicatedCloudService.DefinitionStages.WithLocation?alt=com.azure.resourcemanager.vmwarecloudsimple.models.DedicatedCloudService.DefinitionStages.WithLocation&text=WithLocation\" data-throw-if-not-resolved=\"False\" />"
 type: "interface"
+desc: "The first stage of the DedicatedCloudService definition."
 implements:
 - "<xref href=\"com.azure.resourcemanager.vmwarecloudsimple.models.DedicatedCloudService.DefinitionStages.WithLocation?alt=com.azure.resourcemanager.vmwarecloudsimple.models.DedicatedCloudService.DefinitionStages.WithLocation&text=WithLocation\" data-throw-if-not-resolved=\"False\" />"
 metadata: {}

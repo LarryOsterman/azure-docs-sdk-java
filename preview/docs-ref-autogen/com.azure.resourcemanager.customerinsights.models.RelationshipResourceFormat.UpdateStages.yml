@@ -3,9 +3,10 @@ uid: "com.azure.resourcemanager.customerinsights.models.RelationshipResourceForm
 fullName: "com.azure.resourcemanager.customerinsights.models.RelationshipResourceFormat.UpdateStages"
 name: "RelationshipResourceFormat.UpdateStages"
 nameWithType: "RelationshipResourceFormat.UpdateStages"
-summary: "The RelationshipResourceFormat update stages."
-syntax: "public static interface RelationshipResourceFormat.UpdateStages"
+summary: "The Relationship<wbr>Resource<wbr>Format update stages."
+syntax: "public static interface **RelationshipResourceFormat.UpdateStages**"
 type: "interface"
+desc: "The RelationshipResourceFormat update stages."
 metadata: {}
 package: "com.azure.resourcemanager.customerinsights.models"
 artifact: com.azure.resourcemanager:azure-resourcemanager-customerinsights:1.0.0-beta.1

@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.network.ExpressRouteCircuitPeering.Upd
 name: "ExpressRouteCircuitPeering.UpdateStages"
 nameWithType: "ExpressRouteCircuitPeering.UpdateStages"
 summary: "The template for express route circuit peering update operation, containing all the settings that can be modified."
-syntax: "public static interface ExpressRouteCircuitPeering.UpdateStages"
+syntax: "public static interface **ExpressRouteCircuitPeering.UpdateStages**"
 type: "interface"
+desc: "The template for express route circuit peering update operation, containing all the settings that can be modified."
 metadata: {}
 package: "com.microsoft.azure.management.network"
-artifact: com.microsoft.azure:azure-mgmt-network:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-network:1.41.4

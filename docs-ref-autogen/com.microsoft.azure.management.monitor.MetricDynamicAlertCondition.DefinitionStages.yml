@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.monitor.MetricDynamicAlertCondition.De
 name: "MetricDynamicAlertCondition.DefinitionStages"
 nameWithType: "MetricDynamicAlertCondition.DefinitionStages"
 summary: "Grouping of metric alerts condition definition stages."
-syntax: "public static interface MetricDynamicAlertCondition.DefinitionStages"
+syntax: "public static interface **MetricDynamicAlertCondition.DefinitionStages**"
 type: "interface"
+desc: "Grouping of metric alerts condition definition stages."
 metadata: {}
 package: "com.microsoft.azure.management.monitor"
-artifact: com.microsoft.azure:azure-mgmt-monitor:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-monitor:1.41.4

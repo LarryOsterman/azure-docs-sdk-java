@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.sql.SqlServerKeyOperations.SqlServerKe
 name: "SqlServerKeyOperations.SqlServerKeyOperationsDefinition"
 nameWithType: "SqlServerKeyOperations.SqlServerKeyOperationsDefinition"
 summary: "Container interface for all the definitions that need to be implemented."
-syntax: "public static interface SqlServerKeyOperations.SqlServerKeyOperationsDefinition extends SqlServerKeyOperations.DefinitionStages.WithSqlServer, SqlServerKeyOperations.DefinitionStages.WithServerKeyType, SqlServerKeyOperations.DefinitionStages.WithThumbprint, SqlServerKeyOperations.DefinitionStages.WithCreationDate, SqlServerKeyOperations.DefinitionStages.WithCreate"
+syntax: "public static interface **SqlServerKeyOperations.SqlServerKeyOperationsDefinition**</br> extends <xref href=\"com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithSqlServer?alt=com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithSqlServer&text=WithSqlServer\" data-throw-if-not-resolved=\"False\" />, <xref href=\"com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithServerKeyType?alt=com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithServerKeyType&text=WithServerKeyType\" data-throw-if-not-resolved=\"False\" />, <xref href=\"com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithThumbprint?alt=com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithThumbprint&text=WithThumbprint\" data-throw-if-not-resolved=\"False\" />, <xref href=\"com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithCreationDate?alt=com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithCreationDate&text=WithCreationDate\" data-throw-if-not-resolved=\"False\" />, <xref href=\"com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithCreate?alt=com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithCreate&text=WithCreate\" data-throw-if-not-resolved=\"False\" />"
 type: "interface"
+desc: "Container interface for all the definitions that need to be implemented."
 implements:
 - "<xref href=\"com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithCreate?alt=com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithCreate&text=WithCreate\" data-throw-if-not-resolved=\"False\" />"
 - "<xref href=\"com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithCreationDate?alt=com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithCreationDate&text=WithCreationDate\" data-throw-if-not-resolved=\"False\" />"
@@ -14,4 +15,4 @@ implements:
 - "<xref href=\"com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithThumbprint?alt=com.microsoft.azure.management.sql.SqlServerKeyOperations.DefinitionStages.WithThumbprint&text=WithThumbprint\" data-throw-if-not-resolved=\"False\" />"
 metadata: {}
 package: "com.microsoft.azure.management.sql"
-artifact: com.microsoft.azure:azure-mgmt-sql:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-sql:1.41.4

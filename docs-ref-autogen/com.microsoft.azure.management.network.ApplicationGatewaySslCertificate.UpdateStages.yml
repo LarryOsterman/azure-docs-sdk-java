@@ -4,8 +4,9 @@ fullName: "com.microsoft.azure.management.network.ApplicationGatewaySslCertifica
 name: "ApplicationGatewaySslCertificate.UpdateStages"
 nameWithType: "ApplicationGatewaySslCertificate.UpdateStages"
 summary: "Grouping of application gateway SSL certificate update stages."
-syntax: "public static interface ApplicationGatewaySslCertificate.UpdateStages"
+syntax: "public static interface **ApplicationGatewaySslCertificate.UpdateStages**"
 type: "interface"
+desc: "Grouping of application gateway SSL certificate update stages."
 metadata: {}
 package: "com.microsoft.azure.management.network"
-artifact: com.microsoft.azure:azure-mgmt-network:1.41.2
+artifact: com.microsoft.azure:azure-mgmt-network:1.41.4

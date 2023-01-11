@@ -3,9 +3,10 @@ uid: "com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.D
 fullName: "com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.Definition"
 name: "BaseBackupPolicyResource.Definition"
 nameWithType: "BaseBackupPolicyResource.Definition"
-summary: "The entirety of the BaseBackupPolicyResource definition."
-syntax: "public static interface BaseBackupPolicyResource.Definition extends BaseBackupPolicyResource.DefinitionStages.Blank, BaseBackupPolicyResource.DefinitionStages.WithParentResource, BaseBackupPolicyResource.DefinitionStages.WithCreate"
+summary: "The entirety of the Base<wbr>Backup<wbr>Policy<wbr>Resource definition."
+syntax: "public static interface **BaseBackupPolicyResource.Definition**</br> extends <xref href=\"com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.Blank?alt=com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.Blank&text=Blank\" data-throw-if-not-resolved=\"False\" />, <xref href=\"com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.WithParentResource?alt=com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.WithParentResource&text=WithParentResource\" data-throw-if-not-resolved=\"False\" />, <xref href=\"com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.WithCreate?alt=com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.WithCreate&text=WithCreate\" data-throw-if-not-resolved=\"False\" />"
 type: "interface"
+desc: "The entirety of the BaseBackupPolicyResource definition."
 implements:
 - "<xref href=\"com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.Blank?alt=com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.Blank&text=Blank\" data-throw-if-not-resolved=\"False\" />"
 - "<xref href=\"com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.WithCreate?alt=com.azure.resourcemanager.dataprotection.models.BaseBackupPolicyResource.DefinitionStages.WithCreate&text=WithCreate\" data-throw-if-not-resolved=\"False\" />"

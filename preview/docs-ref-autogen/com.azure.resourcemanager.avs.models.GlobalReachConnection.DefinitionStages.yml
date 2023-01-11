@@ -3,9 +3,10 @@ uid: "com.azure.resourcemanager.avs.models.GlobalReachConnection.DefinitionStage
 fullName: "com.azure.resourcemanager.avs.models.GlobalReachConnection.DefinitionStages"
 name: "GlobalReachConnection.DefinitionStages"
 nameWithType: "GlobalReachConnection.DefinitionStages"
-summary: "The GlobalReachConnection definition stages."
-syntax: "public static interface GlobalReachConnection.DefinitionStages"
+summary: "The Global<wbr>Reach<wbr>Connection definition stages."
+syntax: "public static interface **GlobalReachConnection.DefinitionStages**"
 type: "interface"
+desc: "The GlobalReachConnection definition stages."
 metadata: {}
 package: "com.azure.resourcemanager.avs.models"
-artifact: com.azure.resourcemanager:azure-resourcemanager-avs:1.0.0-beta.3
+artifact: com.azure.resourcemanager:azure-resourcemanager-avs:1.0.0-beta.4
